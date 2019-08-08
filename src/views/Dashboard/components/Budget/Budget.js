@@ -62,13 +62,13 @@ const Budget = props => {
               gutterBottom
               variant="body2"
             >
-              BUDGET
+              Garangan Video
             </Typography>
             <Typography variant="h3">$24,000</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <MoneyIcon className={classes.icon} />
+              <img src="http://ytd.netlify.com/images/video.png/>
             </Avatar>
           </Grid>
         </Grid>
