@@ -68,7 +68,7 @@ const Budget = props => {
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <img src="http://ytd.netlify.com/images/video.png"/>
+              <img src="http://ytd.netlify.com/images/video.png"height="32"width="32"/>
             </Avatar>
           </Grid>
         </Grid>
