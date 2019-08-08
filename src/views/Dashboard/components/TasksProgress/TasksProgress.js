@@ -60,14 +60,14 @@ const TasksProgress = props => {
               gutterBottom
               variant="body2"
             >
-              TASKS PROGRESS
+              Garangan Music
             </Typography>
             <Typography variant="h3">75.5%</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <InsertChartIcon className={classes.icon} />
-            </Avatar>
+              <img src="http://ytd.netlify.com/images/Music.png"height="32"width="32"/>
+          </Avatar>
           </Grid>
         </Grid>
         <LinearProgress
