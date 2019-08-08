@@ -62,14 +62,14 @@ const TotalUsers = props => {
               gutterBottom
               variant="body2"
             >
-              TOTAL USERS
+              Garangan Tv
             </Typography>
             <Typography variant="h3">1,600</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <PeopleIcon className={classes.icon} />
-            </Avatar>
+      <img src="http://ytd.netlify.com/images/tv.png"height="32"width="32"/>
+        </Avatar>
           </Grid>
         </Grid>
         <div className={classes.difference}>
