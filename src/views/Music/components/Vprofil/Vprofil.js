@@ -48,7 +48,7 @@ const Vprofil = props => {
             <Grid
               className={classes.item}
               
-            >
+            ><div>
               <Typography
               variant="subtitle2"
               >
@@ -65,6 +65,7 @@ Streaming music SoundCloud
 
 </p>
               </Typography>
+</div>
               </Grid> </Grid>
 
         </CardContent> 
