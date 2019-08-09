@@ -1,1 +1,2 @@
-Tes
+export { default } from './TvList';
+
