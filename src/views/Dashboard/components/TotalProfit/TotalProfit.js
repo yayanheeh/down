@@ -92,7 +92,7 @@ const TotalProfit = props => {
   );
 };
 
-Budget.propTypes = {
+TotalProfit.propTypes = {
   className: PropTypes.string
 };
 
