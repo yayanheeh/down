@@ -35,8 +35,8 @@ const Vprofil = props => {
     >
       <form>
         <CardHeader
-          subheader="Manage the notifications"
-          title="Notifications"
+          subheader="Manage the Vprofil"
+          title="Vprofil"
         />
         <Divider />
         <CardContent>
