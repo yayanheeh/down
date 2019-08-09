@@ -3,13 +3,12 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import MoneyIcon from '@material-ui/icons/Money';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: '100%',
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText
+    height: '100%'
   },
   content: {
     alignItems: 'center',
@@ -19,14 +18,25 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 700
   },
   avatar: {
-    backgroundColor: theme.palette.white,
-    color: theme.palette.primary.main,
+    backgroundColor: theme.palette.error.main,
     height: 56,
     width: 56
   },
   icon: {
     height: 32,
     width: 32
+  },
+  difference: {
+    marginTop: theme.spacing(2),
+    display: 'flex',
+    alignItems: 'center'
+  },
+  differenceIcon: {
+    color: theme.palette.error.dark
+  },
+  differenceValue: {
+    color: theme.palette.error.dark,
+    marginRight: theme.spacing(1)
   }
 }));
 
@@ -48,31 +58,41 @@ const TotalProfit = props => {
           <Grid item>
             <Typography
               className={classes.title}
-              color="inherit"
+              color="textSecondary"
               gutterBottom
               variant="body2"
             >
-              TOTAL PROFIT
+              Garangan Send
             </Typography>
-            <Typography
-              color="inherit"
-              variant="h3"
-            >
-              $23,200
-            </Typography>
+            <Typography variant="h3">$24,000</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <AttachMoneyIcon className={classes.icon} />
+              <img src="http://ytd.netlify.com/images/send.png"height="32"width="32"/>
             </Avatar>
           </Grid>
         </Grid>
+        <div className={classes.difference}>
+          <ArrowDownwardIcon className={classes.differenceIcon} />
+          <Typography
+            className={classes.differenceValue}
+            variant="body2"
+          >
+            12%
+          </Typography>
+          <Typography
+            className={classes.caption}
+            variant="caption"
+          >
+            Since last month
+          </Typography>
+        </div>
       </CardContent>
     </Card>
   );
 };
 
-TotalProfit.propTypes = {
+Budget.propTypes = {
   className: PropTypes.string
 };
 
