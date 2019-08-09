@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Typography as MuiTypography } from '@material-ui/core';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
