@@ -2,6 +2,20 @@ import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Typography as MuiTypography } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/styles';
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardActions,
+  Divider,
+  Button,
+  TextField
+} from '@material-ui/core';
+
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -41,7 +55,9 @@ const Yayan = () => {
           md={5}
           xs={12}
         >
-          Tes
+          <CardContent>
+Tess heehe
+ <CardContent>
         </Grid>
       </Grid>
 
