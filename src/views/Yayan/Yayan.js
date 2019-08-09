@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/styles';
-import { Grid, Typography as MuiTypography } from '@material-ui/core';
+import { Typography as MuiTypography } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,7 +37,12 @@ const Yayan = () => {
         container
         spacing={4}
       >
-      Testing
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+        </Grid>
       </Grid>
     </div>
   );
