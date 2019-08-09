@@ -73,6 +73,12 @@ Streaming music SoundCloud</b>
 <br/>- Mainkan musik online gratis dalam mode latar belakang
 
 </p>
+<br/><b>Catatan</b>
+<br/>
+Semua content lagu yang ada di Garangan Musik ini diambil dari SoundCloud API yang mematuhi persyaratan penggunaan.
+<br/>Garangan Musik BUKAN pengunduh musik<br/> tidak dapat mengunduh musik<br/>tidak dapat memutar offline kecuali musik lokal.
+<br/>Klien asli SoundCloud®: https://play.google.com/store/apps/details?id=com.soundcloud.android<br/>
+<b>Terima kasih</b>
               </Typography>
 
 
