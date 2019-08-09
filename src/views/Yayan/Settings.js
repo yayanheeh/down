@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
-import { Notifications, Password } from './components';
+import { List, View } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Settings = () => {
+const Yayan = () => {
   const classes = useStyles();
 
   return (
@@ -38,4 +38,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default Yayan;
