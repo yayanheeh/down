@@ -1,19 +1,37 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import moment from 'moment';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
-  CardHeader,
-  CardContent,
   CardActions,
+  CardContent,
+  Avatar,
+  Typography,
   Divider,
   Button,
-  TextField
+  LinearProgress
 } from '@material-ui/core';
 
-const useStyles = makeStyles(() => ({
-  root: {}
+const useStyles = makeStyles(theme => ({
+  root: {},
+  details: {
+    display: 'flex'
+  },
+  avatar: {
+    marginLeft: 'auto',
+    height: 110,
+    width: 100,
+    flexShrink: 0,
+    flexGrow: 0
+  },
+  progress: {
+    marginTop: theme.spacing(2)
+  },
+  uploadButton: {
+    marginRight: theme.spacing(2)
+  }
 }));
 
 const Vdetail = props => {
@@ -21,16 +39,12 @@ const Vdetail = props => {
 
   const classes = useStyles();
 
-  const [values, setValues] = useState({
-    password: '',
-    confirm: ''
-  });
-
-  const handleChange = event => {
-    setValues({
-      ...values,
-      [event.target.name]: event.target.value
-    });
+  const user = {
+    name: 'Shen Zhi',
+    city: 'Los Angeles',
+    country: 'USA',
+    timezone: 'GTM-7',
+    avatar: '/images/avatars/avatar_11.png'
   };
 
   return (
@@ -38,48 +52,59 @@ const Vdetail = props => {
       {...rest}
       className={clsx(classes.root, className)}
     >
-      <form>
-        <CardHeader
-          subheader="Update password"
-          title="Password"
-        />
-        <Divider />
-        <CardContent>
-          <TextField
-            fullWidth
-            label="Password"
-            name="password"
-            onChange={handleChange}
-            type="password"
-            value={values.password}
-            variant="outlined"
+      <CardContent>
+        <div className={classes.details}>
+          <div>
+            <Typography
+              gutterBottom
+              variant="h2"
+            >
+              John Doe
+            </Typography>
+            <Typography
+              className={classes.locationText}
+              color="textSecondary"
+              variant="body1"
+            >
+              {user.city}, {user.country}
+            </Typography>
+            <Typography
+              className={classes.dateText}
+              color="textSecondary"
+              variant="body1"
+            >
+              {moment().format('hh:mm A')} ({user.timezone})
+            </Typography>
+          </div>
+          <Avatar
+            className={classes.avatar}
+            src={user.avatar}
           />
-          <TextField
-            fullWidth
-            label="Confirm password"
-            name="confirm"
-            onChange={handleChange}
-            style={{ marginTop: '1rem' }}
-            type="password"
-            value={values.confirm}
-            variant="outlined"
+        </div>
+        <div className={classes.progress}>
+          <Typography variant="body1">Profile Completeness: 70%</Typography>
+          <LinearProgress
+            value={70}
+            variant="determinate"
           />
-        </CardContent>
-        <Divider />
-        <CardActions>
-          <Button
-            color="primary"
-            variant="outlined"
-          >
-            Update
-          </Button>
-        </CardActions>
-      </form>
+        </div>
+      </CardContent>
+      <Divider />
+      <CardActions>
+        <Button
+          className={classes.uploadButton}
+          color="primary"
+          variant="text"
+        >
+          Upload picture
+        </Button>
+        <Button variant="text">Remove picture</Button>
+      </CardActions>
     </Card>
   );
 };
 
-Vdetail.propTypes = {
+  Vdetail.propTypes = {
   className: PropTypes.string
 };
 
