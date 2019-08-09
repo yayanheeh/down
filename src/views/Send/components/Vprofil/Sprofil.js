@@ -23,7 +23,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const Vprofil = props => {
+const Sprofil = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -142,8 +142,8 @@ const Vprofil = props => {
   );
 };
 
-Vprofil.propTypes = {
+Sprofil.propTypes = {
   className: PropTypes.string
 };
 
-export default Vprofil;
+export default Sprofil;
