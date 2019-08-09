@@ -53,8 +53,7 @@ const Vprofil = props => {
               xs={12}
             >
               <Typography
-                gutterBottom
-                variant="subtitle2"
+              variant="subtitle2"
               >
                 
 <p>Garangan Music adalah web streaming musik yang luar biasa yang memberikan pengalaman hebat streaming tanpa batas dari lagu-lagu SoundCloud MP3 secara gratis.
