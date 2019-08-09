@@ -1,1 +1,1 @@
-export { default } from './Yayan';
+export { default } from './Settings';
