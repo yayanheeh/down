@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
-import { Tv, TvList } from './components';
+import { TvIndex, TvList } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,7 +26,7 @@ const Tv = () => {
           xl={4}
           xs={12}
         >
-          <Tv />
+          <TvIndex />
         </Grid>
         <Grid
           item
