@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const Password = props => {
+const View = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -79,8 +79,8 @@ const Password = props => {
   );
 };
 
-Password.propTypes = {
+View.propTypes = {
   className: PropTypes.string
 };
 
-export default Password;
+export default View;
