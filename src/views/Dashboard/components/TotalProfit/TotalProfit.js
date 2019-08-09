@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.purple.dark
   },
   differenceValue: {
-    color: theme.palette.error.dark,
+    color: theme.palette.purple.dark,
     marginRight: theme.spacing(1)
   }
 }));
