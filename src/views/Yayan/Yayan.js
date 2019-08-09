@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Settings = () => {
+const Yayan = () => {
   const classes = useStyles();
 
   return (
@@ -38,4 +38,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default Yayan;
