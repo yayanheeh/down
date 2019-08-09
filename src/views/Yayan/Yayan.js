@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import moment from 'moment';
@@ -52,6 +53,18 @@ const Yayan = props => {
       {...rest}
       className={clsx(classes.root, className)}
     >
+ <Grid
+        container
+        spacing={4}
+      >
+        <Grid
+          item
+          lg={4}
+          md={6}
+          xl={4}
+          xs={12}
+        >
+
       <CardContent>
         <div className={classes.details}>
           <div>
@@ -100,6 +113,18 @@ const Yayan = props => {
         </Button>
         <Button variant="text">Remove picture</Button>
       </CardActions>
+   </Grid>
+        <Grid
+          item
+          lg={8}
+          md={6}
+          xl={8}
+          xs={12}
+        >
+          Tess
+        </Grid>
+      </Grid>
+
     </Card>
   );
 };
