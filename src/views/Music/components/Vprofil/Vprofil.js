@@ -47,10 +47,7 @@ const Vprofil = props => {
           >
             <Grid
               className={classes.item}
-              item
-              md={4}
-              sm={6}
-              xs={12}
+              
             >
               <Typography
               variant="subtitle2"
