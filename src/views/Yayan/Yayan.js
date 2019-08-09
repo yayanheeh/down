@@ -35,24 +35,7 @@ const Yayan = () => {
         container
         spacing={4}
       >
-        {Object.keys(variants).map((key, i) => (
-          <Fragment key={i}>
-            <Grid
-              item
-              sm={3}
-              xs={12}
-            >
-              <MuiTypography variant="caption">{key}</MuiTypography>
-            </Grid>
-            <Grid
-              item
-              sm={9}
-              xs={12}
-            >
-              <MuiTypography variant={key}>{variants[key]}</MuiTypography>
-            </Grid>
-          </Fragment>
-        ))}
+      Testing
       </Grid>
     </div>
   );
