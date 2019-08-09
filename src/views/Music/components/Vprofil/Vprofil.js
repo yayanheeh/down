@@ -56,9 +56,21 @@ const Vprofil = props => {
                 gutterBottom
                 variant="h6"
               >
-                Notifications tessddd
+                Notificationstrdddd
               </Typography>
-              
+              </Grid> </Grid>
+
+        </CardContent> 
+        <Divider />
+        <CardActions>
+          <Button
+            color="primary"
+            variant="outlined"
+          >
+            Save
+          </Button>
+        </CardActions>
+      </form>
     </Card>
   );
 };
