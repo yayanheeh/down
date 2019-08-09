@@ -59,6 +59,15 @@ const Vprofil = props => {
                 
 <p>Garangan Music adalah web streaming musik yang luar biasa yang memberikan pengalaman hebat streaming tanpa batas dari lagu-lagu SoundCloud MP3 secara gratis.
 </p>
+<p>
+Streaming music SoundCloud 
+- Cari musik online gratis melalui jutaan MP3
+- Dengarkan musik gratis: Artis SoundCloud Top & dengarkan album top
+- Mainkan musik online berdasarkan genre
+- Dengarkan musik dengan daftar putar Musi: pesta, olahraga, tidur, dan lainnya
+- Mainkan musik online gratis dalam mode latar belakang
+
+</p>
               </Typography>
               </Grid> </Grid>
 
