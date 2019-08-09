@@ -49,7 +49,7 @@ const Yayan = props => {
   };
 
   return (
-    <Card
+    <div
       {...rest}
       className={clsx(classes.root, className)}
     >
@@ -125,7 +125,7 @@ const Yayan = props => {
         </Grid>
       </Grid>
 
-    </Card>
+    </div>
   );
 };
 
