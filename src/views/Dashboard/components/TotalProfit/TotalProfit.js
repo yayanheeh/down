@@ -5,8 +5,6 @@ import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MoneyIcon from '@material-ui/icons/Money';
-import purple from '@material-ui/core/colors/purple';
-
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 700
   },
   avatar: {
-    backgroundColor: theme.palette.purple.main,
+    backgroundColor: theme.palette.error.main,
     height: 56,
     width: 56
   },
@@ -34,10 +32,10 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center'
   },
   differenceIcon: {
-    color: theme.palette.purple.dark
+    color: theme.palette.error.dark
   },
   differenceValue: {
-    color: theme.palette.purple.dark,
+    color: theme.palette.error.dark,
     marginRight: theme.spacing(1)
   }
 }));
