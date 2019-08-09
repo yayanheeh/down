@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
-import { List, View } from './components';
+import { View, List } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,14 +24,14 @@ const Yayan = () => {
           md={7}
           xs={12}
         >
-          <list />
+          <View />
         </Grid>
         <Grid
           item
           md={5}
           xs={12}
         >
-          <View />
+          <List />
         </Grid>
       </Grid>
     </div>
