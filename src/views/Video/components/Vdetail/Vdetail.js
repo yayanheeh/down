@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const Password = props => {
+const Vdetail = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -79,8 +79,8 @@ const Password = props => {
   );
 };
 
-Password.propTypes = {
+Vdetail.propTypes = {
   className: PropTypes.string
 };
 
-export default Password;
+export default Vdetail;
