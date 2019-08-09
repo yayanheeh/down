@@ -19,20 +19,23 @@ const Settings = () => {
         container
         spacing={4}
       >
-        <Grid
-          item
-          md={7}
-          xs={12}
-        >
-          <Vprofil />
-        </Grid>
-        <Grid
+        
+    <Grid
           item
           md={5}
           xs={12}
         >
           <Vdetail />
         </Grid>
+    
+    <Grid
+          item
+          md={7}
+          xs={12}
+        >
+          <Vprofil />
+        </Grid>
+        
       </Grid>
     </div>
   );
