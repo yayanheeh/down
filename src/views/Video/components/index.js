@@ -1,2 +1,2 @@
-export { default as Notifications } from './Notifications';
-export { default as Password } from './Password';
+export { default as Vprofil } from './Vprofil';
+export { default as Vdetail } from './Vdetail';
