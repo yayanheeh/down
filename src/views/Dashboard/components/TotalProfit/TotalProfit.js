@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MoneyIcon from '@material-ui/icons/Money';
+import purple from '@material-ui/core/colors/purple';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
