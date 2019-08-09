@@ -24,10 +24,10 @@ const Footer = props => {
         &copy;{' '}
         <Link
           component="a"
-          href="https://devias.io/"
+          href="https://www.instagram.com/kres_008"
           target="_blank"
         >
-          Devias IO
+          Kres_008
         </Link>
         . 2019
       </Typography>
