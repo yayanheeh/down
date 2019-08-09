@@ -42,6 +42,11 @@ const Vprofil = props => {
         />
         <Divider />
         <CardContent>
+ <Grid item xs={12}>
+          <Paper className={classes.paper}>xs=12</Paper>
+        </Grid>
+
+
           <Grid
             container
             spacing={6}
