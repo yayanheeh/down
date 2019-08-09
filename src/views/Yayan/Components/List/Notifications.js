@@ -23,7 +23,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const Notifications = props => {
+const List = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -142,8 +142,8 @@ const Notifications = props => {
   );
 };
 
-Notifications.propTypes = {
+List.propTypes = {
   className: PropTypes.string
 };
 
-export default Notifications;
+export default List;
