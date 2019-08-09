@@ -18,6 +18,7 @@ import {
   Send as SendView,
   Yayan as YayanView,
   Video as VideoView,
+  Music as MusicView,
   NotFound as NotFoundView
 } from './views';
 
@@ -76,6 +77,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/video"
+      />
+    <RouteWithLayout
+        component={MusicView}
+        exact
+        layout={MainLayout}
+        path="/music"
       />
       <RouteWithLayout
         component={SettingsView}
