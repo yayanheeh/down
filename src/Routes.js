@@ -15,6 +15,7 @@ import {
   SignUp as SignUpView,
   SignIn as SignInView,
   Tv as TvView,
+  Yayan as YayanView,
   NotFound as NotFoundView
 } from './views';
 
@@ -62,6 +63,13 @@ const Routes = () => {
         layout={MainLayout}
         path="/account"
       />
+     <RouteWithLayout
+        component={YayanView}
+        exact
+        layout={MainLayout}
+        path="/yayan"
+      />
+
       <RouteWithLayout
         component={SettingsView}
         exact
