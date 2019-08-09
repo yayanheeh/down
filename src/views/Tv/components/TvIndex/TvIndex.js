@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const Tv = props => {
+const TvIndex = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -197,8 +197,8 @@ const Tv = props => {
   );
 };
 
-Tv.propTypes = {
+TvIndex.propTypes = {
   className: PropTypes.string
 };
 
-export default Tv;
+export default TvIndex;
