@@ -42,9 +42,7 @@ const Vprofil = props => {
         />
         <Divider />
         <CardContent>
- <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=12</Paper>
-        </Grid>
+ 
 
 
           <Grid
@@ -54,8 +52,8 @@ const Vprofil = props => {
           >
             <Grid
               className={classes.item}
-              
-            >
+              item xs={12}>
+            
               <Typography
               variant="subtitle2"
               >
@@ -73,16 +71,6 @@ Streaming music SoundCloud
 </p>
               </Typography>
 
-  <div>
-      <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
-        </Typography>
-      </Paper>
-    </div>
 
 
               </Grid> </Grid>
