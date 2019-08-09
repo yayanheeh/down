@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Vdetail = props => {
+const Sdetail = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -104,8 +104,8 @@ const Vdetail = props => {
   );
 };
 
-  Vdetail.propTypes = {
+  Sdetail.propTypes = {
   className: PropTypes.string
 };
 
-export default Vdetail;
+export default Sdetail;
