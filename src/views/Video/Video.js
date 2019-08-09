@@ -24,14 +24,14 @@ const Settings = () => {
           md={7}
           xs={12}
         >
-          <Notifications />
+          <Vprofil />
         </Grid>
         <Grid
           item
           md={5}
           xs={12}
         >
-          <Password />
+          <Vdetail />
         </Grid>
       </Grid>
     </div>
