@@ -24,14 +24,14 @@ const Yayan = () => {
           md={7}
           xs={12}
         >
-          <Notifications />
+          <list />
         </Grid>
         <Grid
           item
           md={5}
           xs={12}
         >
-          <Password />
+          <View />
         </Grid>
       </Grid>
     </div>
