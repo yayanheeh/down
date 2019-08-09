@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Paper from '@material-ui/core/Paper';
+
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import {
@@ -48,7 +50,7 @@ const Vprofil = props => {
             <Grid
               className={classes.item}
               
-            ><div>
+            >
               <Typography
               variant="subtitle2"
               >
@@ -65,7 +67,19 @@ Streaming music SoundCloud
 
 </p>
               </Typography>
-</div>
+
+  <div>
+      <Paper className={classes.root}>
+        <Typography variant="h5" component="h3">
+          This is a sheet of paper.
+        </Typography>
+        <Typography component="p">
+          Paper can be used to build surface or other elements for your application.
+        </Typography>
+      </Paper>
+    </div>
+
+
               </Grid> </Grid>
 
         </CardContent> 
