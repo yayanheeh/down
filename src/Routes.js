@@ -17,6 +17,7 @@ import {
   Tv as TvView,
   Send as SendView,
   Yayan as YayanView,
+  Video as VideoView,
   NotFound as NotFoundView
 } from './views';
 
@@ -70,7 +71,12 @@ const Routes = () => {
         layout={MainLayout}
         path="/yayan"
       />
-
+    <RouteWithLayout
+        component={VideoView}
+        exact
+        layout={MainLayout}
+        path="/video"
+      />
       <RouteWithLayout
         component={SettingsView}
         exact
