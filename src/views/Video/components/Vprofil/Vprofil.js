@@ -23,7 +23,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const Notifications = props => {
+const Vprofil = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -142,8 +142,8 @@ const Notifications = props => {
   );
 };
 
-Notifications.propTypes = {
+Vprofil.propTypes = {
   className: PropTypes.string
 };
 
-export default Notifications;
+export default Vprofil;
